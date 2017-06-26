@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YM3-jk-ebJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Q2u-Gg-hqc">
+                                <rect key="frame" x="0.0" y="507" width="375" height="160"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="nV4-PO-7bE"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Q2u-Gg-hqc" secondAttribute="trailing" id="IoO-wm-yKh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YM3-jk-ebJ" secondAttribute="bottom" id="Iyi-WP-9I4"/>
+                            <constraint firstAttribute="trailing" secondItem="YM3-jk-ebJ" secondAttribute="trailing" id="NBa-Ma-z50"/>
+                            <constraint firstItem="Q2u-Gg-hqc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SoL-ms-VHk"/>
+                            <constraint firstItem="YM3-jk-ebJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Wo2-Xq-sTq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Q2u-Gg-hqc" secondAttribute="bottom" id="agK-MG-TfT"/>
+                            <constraint firstItem="YM3-jk-ebJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iBG-FZ-SO4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="YM3-jk-ebJ" id="PXt-p3-dvi"/>
+                        <outlet property="debugTextView" destination="Q2u-Gg-hqc" id="DUe-Bs-PCs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>
